@@ -1,0 +1,67 @@
+.file-tree {
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.child {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.child:hover {
+  color: white;
+  background-color: #5086ec;
+}
+
+.subchild.collapsed {
+  display: none;
+  height: 0;
+}
+
+.subchild.expanded {
+  height: 100%;
+  transition: height 0.2s ease-out;
+}
+
+.name {
+  margin: 6px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.folder,
+.private,
+.file,
+.close,
+.expand,
+.collapse {
+  margin-right: 6px;
+  background: url(icon-sprite.png);
+  display: inline-block;
+  height: 14px;
+  min-width: 14px;
+}
+
+.private {
+  background-position: -14px
+}
+
+.file {
+  background-position: -28px;
+}
+
+.close {
+  background-position: -42px;
+}
+
+.expand {
+  background-position: -56px;
+}
+
+.collapse {
+  background-position: -70px;
+}
